@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="wait"><span id="loading-text">Hello dear person! I see<br> u do it , Dm @real_pavel_dur0v for next step.<br>Send this screan for him</span></div>
+    <img class="img-d" src="https://i.pinimg.com/originals/6c/2b/b8/6c2bb8b7405d465a581a957944dbb8a3.gif" alt="">
+</body>
+
+<script>
+    setTimeout(function() {
+        // Додаємо клас для переміщення тексту вправо
+        document.querySelector('.wait').classList.add('move-right');
+        
+        // Додаємо клас для переміщення зображення вправо
+        document.querySelector('.img-d').classList.add('move-right');
+        
+        // Після переміщення закриваємо сторінку через 2с
+        setTimeout(function() {
+            window.close();
+        }, 2000);
+    }, 8000); // Чекаємо 8 секунд перед початком анімації
+</script>
+
+</html>

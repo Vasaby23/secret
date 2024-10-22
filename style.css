@@ -1,0 +1,53 @@
+html{
+    margin: 0;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    overflow: hidden;
+}
+div{
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.wait {
+    font-family: Arial, sans-serif;
+    color: #333;
+    transition: transform 2s ease-in-out;
+}
+
+#loading-text {
+    opacity: 0;
+    animation: fadeIn 4s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.move-right {
+    transform: translateX(100vw);
+  }
+
+
+  .wait, .img-d {
+    position: absolute;
+    transition: transform 2s ease-in-out;
+    left: 0;
+  }
+  
+  .move-right {
+    transform: translateX(100vw); /* Переміщує елементи на всю ширину екрана */
+  }
+  
