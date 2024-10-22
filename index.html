@@ -13,17 +13,12 @@
 
 <script>
     setTimeout(function() {
-        // Додаємо клас для переміщення тексту вправо
         document.querySelector('.wait').classList.add('move-right');
-        
-        // Додаємо клас для переміщення зображення вправо
         document.querySelector('.img-d').classList.add('move-right');
-        
-        // Після переміщення закриваємо сторінку через 2с
         setTimeout(function() {
             window.close();
-        }, 2000);
-    }, 8000); // Чекаємо 8 секунд перед початком анімації
+        }, 4000);
+    }, 8000);
 </script>
 
 </html>
